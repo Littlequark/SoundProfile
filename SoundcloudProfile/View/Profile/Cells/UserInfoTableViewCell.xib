@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="75" id="OaS-7Q-izU" customClass="UserInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OaS-7Q-izU" id="fPq-Qk-kCa">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jux-m2-18m">
+                        <rect key="frame" x="20" y="7.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="UL0-Pj-1g5"/>
+                            <constraint firstAttribute="width" constant="60" id="key-le-Dbd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soundcloud User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXB-sW-uj0">
+                        <rect key="frame" x="96" y="21" width="259" height="26"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zou-n3-Wjy">
+                        <rect key="frame" x="96" y="49" width="259" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jux-m2-18m" firstAttribute="leading" secondItem="fPq-Qk-kCa" secondAttribute="leadingMargin" constant="4" id="4wA-iF-dSM"/>
+                    <constraint firstItem="zou-n3-Wjy" firstAttribute="top" secondItem="JXB-sW-uj0" secondAttribute="bottom" constant="2" id="CTP-LO-GcW"/>
+                    <constraint firstItem="zou-n3-Wjy" firstAttribute="leading" secondItem="JXB-sW-uj0" secondAttribute="leading" id="DMU-Lk-L1G"/>
+                    <constraint firstItem="zou-n3-Wjy" firstAttribute="trailing" secondItem="JXB-sW-uj0" secondAttribute="trailing" id="R8g-sh-NNV"/>
+                    <constraint firstItem="JXB-sW-uj0" firstAttribute="leading" secondItem="Jux-m2-18m" secondAttribute="trailing" constant="16" id="RXG-ea-l5a"/>
+                    <constraint firstItem="Jux-m2-18m" firstAttribute="centerY" secondItem="fPq-Qk-kCa" secondAttribute="centerY" id="Rkb-gE-C28"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JXB-sW-uj0" secondAttribute="trailing" constant="4" id="etD-11-qkZ"/>
+                    <constraint firstItem="JXB-sW-uj0" firstAttribute="top" secondItem="fPq-Qk-kCa" secondAttribute="topMargin" constant="10" id="gEy-pp-uhl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="Jux-m2-18m" id="aSS-Gm-lFG"/>
+                <outlet property="primaryLabel" destination="JXB-sW-uj0" id="K5R-ND-vGR"/>
+                <outlet property="secondaryLabel" destination="zou-n3-Wjy" id="c6H-Ow-8BG"/>
+            </connections>
+            <point key="canvasLocation" x="133.59999999999999" y="-2.2488755622188905"/>
+        </tableViewCell>
+    </objects>
+</document>

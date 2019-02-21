@@ -8,12 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		C9B52C83221B09B9006C7423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52C82221B09B9006C7423 /* AppDelegate.m */; };
-		C9B52C86221B09B9006C7423 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52C85221B09B9006C7423 /* ViewController.m */; };
+		C9B52C86221B09B9006C7423 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52C85221B09B9006C7423 /* ProfileViewController.m */; };
 		C9B52C89221B09B9006C7423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B52C87221B09B9006C7423 /* Main.storyboard */; };
 		C9B52C8B221B09BB006C7423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B52C8A221B09BB006C7423 /* Assets.xcassets */; };
 		C9B52C8E221B09BB006C7423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B52C8C221B09BB006C7423 /* LaunchScreen.storyboard */; };
 		C9B52C91221B09BB006C7423 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52C90221B09BB006C7423 /* main.m */; };
 		C9B52C9B221B09BB006C7423 /* SoundcloudProfileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52C9A221B09BB006C7423 /* SoundcloudProfileTests.m */; };
+		C9B52CA8221B0A61006C7423 /* NetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CA7221B0A61006C7423 /* NetworkClient.m */; };
+		C9B52CB6221C1F82006C7423 /* UsersService.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CB5221C1F82006C7423 /* UsersService.m */; };
+		C9B52CBC221C1FCD006C7423 /* UserInfoDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CBB221C1FCD006C7423 /* UserInfoDTO.m */; };
+		C9B52CC4221C2DB7006C7423 /* UserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CC3221C2DB7006C7423 /* UserObject.m */; };
+		C9B52CDB221C3B75006C7423 /* UserServiceServiceLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CDA221C3B75006C7423 /* UserServiceServiceLocator.m */; };
+		C9B52CDE221C48BB006C7423 /* UserResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CDD221C48BB006C7423 /* UserResponseSerializer.m */; };
+		C9B52CE1221C48D1006C7423 /* UserRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CE0221C48D1006C7423 /* UserRequestSerializer.m */; };
+		C9B52CE4221C4DEC006C7423 /* TrackObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CE3221C4DEC006C7423 /* TrackObject.m */; };
+		C9B52CE8221C4E05006C7423 /* TrackListDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CE7221C4E05006C7423 /* TrackListDTO.m */; };
+		C9B52CEB221C4E1D006C7423 /* TrackDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CEA221C4E1D006C7423 /* TrackDTO.m */; };
+		C9B52CEF221CAC46006C7423 /* UserProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CEE221CAC46006C7423 /* UserProfileModel.m */; };
+		C9B52D05221CAD33006C7423 /* ComposedDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CF6221CAD32006C7423 /* ComposedDataSource.mm */; };
+		C9B52D07221CAD33006C7423 /* ComposedDataSource+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52CFE221CAD32006C7423 /* ComposedDataSource+Private.m */; };
+		C9B52D09221CAD33006C7423 /* BasicDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D01221CAD33006C7423 /* BasicDataSource.m */; };
+		C9B52D0B221CAD33006C7423 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D03221CAD33006C7423 /* DataSource.m */; };
+		C9B52D0E221CAEA0006C7423 /* NSIndexPath+DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D0D221CAEA0006C7423 /* NSIndexPath+DataSource.m */; };
+		C9B52D14221CB33D006C7423 /* CollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D11221CB33C006C7423 /* CollectionViewModel.m */; };
+		C9B52D18221D5CE6006C7423 /* CommonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D17221D5CE6006C7423 /* CommonTableViewController.m */; };
+		C9B52D1E221D69B2006C7423 /* UserInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D1D221D69B2006C7423 /* UserInfoTableViewCell.m */; };
+		C9B52D21221D69CD006C7423 /* TrackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D20221D69CD006C7423 /* TrackTableViewCell.m */; };
+		C9B52D24221D69FA006C7423 /* UserProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D23221D69FA006C7423 /* UserProfileViewModel.m */; };
+		C9B52D29221D6B25006C7423 /* UserInfoCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D28221D6B25006C7423 /* UserInfoCellViewModel.m */; };
+		C9B52D2C221D6B37006C7423 /* TrackCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D2B221D6B37006C7423 /* TrackCellViewModel.m */; };
+		C9B52D31221D859E006C7423 /* UITableView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D30221D859E006C7423 /* UITableView+Util.m */; };
+		C9B52D33221D87F6006C7423 /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B52D32221D87F6006C7423 /* UserInfoTableViewCell.xib */; };
+		C9B52D35221D8813006C7423 /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B52D34221D8813006C7423 /* TrackTableViewCell.xib */; };
+		C9B52D3C221D9EDC006C7423 /* UserProfileServiceLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D3B221D9EDC006C7423 /* UserProfileServiceLocator.m */; };
+		C9B52D42221DEB90006C7423 /* UIViewController+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D41221DEB90006C7423 /* UIViewController+ErrorHandling.m */; };
+		C9B52D46221DFBF6006C7423 /* UIView+GentleShowAndDismiss.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D45221DFBF6006C7423 /* UIView+GentleShowAndDismiss.m */; };
+		C9B52D4A221E04F7006C7423 /* TextLabelReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D49221E04F7006C7423 /* TextLabelReusableView.m */; };
+		C9B52D4C221E0509006C7423 /* TextLabelReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B52D4B221E0509006C7423 /* TextLabelReusableView.xib */; };
+		FD68DF0CD9818B8038A4C494 /* libPods-SoundcloudProfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 831CF3EEA560A268DAD90BFF /* libPods-SoundcloudProfile.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,11 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A23511A7D545C8D08A8DC16 /* Pods-SoundcloudProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundcloudProfile.debug.xcconfig"; path = "Target Support Files/Pods-SoundcloudProfile/Pods-SoundcloudProfile.debug.xcconfig"; sourceTree = "<group>"; };
+		3A4FC91991B0F2DA184D2789 /* Pods-SoundcloudProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundcloudProfile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundcloudProfile/Pods-SoundcloudProfile.debug.xcconfig"; sourceTree = "<group>"; };
+		4C9F6597D46C05C08AA66C36 /* Pods-SoundcloudProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundcloudProfile.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundcloudProfile/Pods-SoundcloudProfile.release.xcconfig"; sourceTree = "<group>"; };
+		831CF3EEA560A268DAD90BFF /* libPods-SoundcloudProfile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoundcloudProfile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9E03F9ED345E216C2367D0C /* Pods-SoundcloudProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundcloudProfile.release.xcconfig"; path = "Target Support Files/Pods-SoundcloudProfile/Pods-SoundcloudProfile.release.xcconfig"; sourceTree = "<group>"; };
 		C9B52C7E221B09B9006C7423 /* SoundcloudProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundcloudProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B52C81221B09B9006C7423 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C9B52C82221B09B9006C7423 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C9B52C84221B09B9006C7423 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C9B52C85221B09B9006C7423 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C9B52C84221B09B9006C7423 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		C9B52C85221B09B9006C7423 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		C9B52C88221B09B9006C7423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9B52C8A221B09BB006C7423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9B52C8D221B09BB006C7423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +77,85 @@
 		C9B52C96221B09BB006C7423 /* SoundcloudProfileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundcloudProfileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B52C9A221B09BB006C7423 /* SoundcloudProfileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundcloudProfileTests.m; sourceTree = "<group>"; };
 		C9B52C9C221B09BB006C7423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9B52CA6221B0A61006C7423 /* NetworkClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkClient.h; sourceTree = "<group>"; };
+		C9B52CA7221B0A61006C7423 /* NetworkClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkClient.m; sourceTree = "<group>"; };
+		C9B52CA9221B0CE8006C7423 /* NetworkClientProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkClientProtocol.h; sourceTree = "<group>"; };
+		C9B52CB3221C1F72006C7423 /* UsersServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersServiceProtocol.h; sourceTree = "<group>"; };
+		C9B52CB4221C1F82006C7423 /* UsersService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersService.h; sourceTree = "<group>"; };
+		C9B52CB5221C1F82006C7423 /* UsersService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsersService.m; sourceTree = "<group>"; };
+		C9B52CBA221C1FCD006C7423 /* UserInfoDTO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoDTO.h; sourceTree = "<group>"; };
+		C9B52CBB221C1FCD006C7423 /* UserInfoDTO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoDTO.m; sourceTree = "<group>"; };
+		C9B52CBF221C2526006C7423 /* UserRequestSerializerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserRequestSerializerProtocol.h; sourceTree = "<group>"; };
+		C9B52CC0221C253B006C7423 /* UserResponseSerializerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserResponseSerializerProtocol.h; sourceTree = "<group>"; };
+		C9B52CC2221C2DB7006C7423 /* UserObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserObject.h; sourceTree = "<group>"; };
+		C9B52CC3221C2DB7006C7423 /* UserObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserObject.m; sourceTree = "<group>"; };
+		C9B52CD5221C3451006C7423 /* SafeBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeBlock.h; sourceTree = "<group>"; };
+		C9B52CD8221C3B55006C7423 /* UserServiceServiceLocatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserServiceServiceLocatorProtocol.h; sourceTree = "<group>"; };
+		C9B52CD9221C3B75006C7423 /* UserServiceServiceLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserServiceServiceLocator.h; sourceTree = "<group>"; };
+		C9B52CDA221C3B75006C7423 /* UserServiceServiceLocator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserServiceServiceLocator.m; sourceTree = "<group>"; };
+		C9B52CDC221C48BB006C7423 /* UserResponseSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserResponseSerializer.h; sourceTree = "<group>"; };
+		C9B52CDD221C48BB006C7423 /* UserResponseSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserResponseSerializer.m; sourceTree = "<group>"; };
+		C9B52CDF221C48D1006C7423 /* UserRequestSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserRequestSerializer.h; sourceTree = "<group>"; };
+		C9B52CE0221C48D1006C7423 /* UserRequestSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserRequestSerializer.m; sourceTree = "<group>"; };
+		C9B52CE2221C4DEC006C7423 /* TrackObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackObject.h; sourceTree = "<group>"; };
+		C9B52CE3221C4DEC006C7423 /* TrackObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackObject.m; sourceTree = "<group>"; };
+		C9B52CE6221C4E05006C7423 /* TrackListDTO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackListDTO.h; sourceTree = "<group>"; };
+		C9B52CE7221C4E05006C7423 /* TrackListDTO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackListDTO.m; sourceTree = "<group>"; };
+		C9B52CE9221C4E1D006C7423 /* TrackDTO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackDTO.h; sourceTree = "<group>"; };
+		C9B52CEA221C4E1D006C7423 /* TrackDTO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackDTO.m; sourceTree = "<group>"; };
+		C9B52CEC221CAC1D006C7423 /* UserProfileModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfileModelProtocol.h; sourceTree = "<group>"; };
+		C9B52CED221CAC46006C7423 /* UserProfileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfileModel.h; sourceTree = "<group>"; };
+		C9B52CEE221CAC46006C7423 /* UserProfileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserProfileModel.m; sourceTree = "<group>"; };
+		C9B52CF1221CAD31006C7423 /* DataSource_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource_Private.h; sourceTree = "<group>"; };
+		C9B52CF2221CAD32006C7423 /* BasicDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicDataSource.h; sourceTree = "<group>"; };
+		C9B52CF4221CAD32006C7423 /* ComposedDataSource+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ComposedDataSource+Private.h"; sourceTree = "<group>"; };
+		C9B52CF6221CAD32006C7423 /* ComposedDataSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ComposedDataSource.mm; sourceTree = "<group>"; };
+		C9B52CF7221CAD32006C7423 /* DataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceDelegate.h; sourceTree = "<group>"; };
+		C9B52CFD221CAD32006C7423 /* ComposedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposedDataSource.h; sourceTree = "<group>"; };
+		C9B52CFE221CAD32006C7423 /* ComposedDataSource+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ComposedDataSource+Private.m"; sourceTree = "<group>"; };
+		C9B52D00221CAD33006C7423 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		C9B52D01221CAD33006C7423 /* BasicDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicDataSource.m; sourceTree = "<group>"; };
+		C9B52D03221CAD33006C7423 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		C9B52D0C221CAEA0006C7423 /* NSIndexPath+DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+DataSource.h"; sourceTree = "<group>"; };
+		C9B52D0D221CAEA0006C7423 /* NSIndexPath+DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+DataSource.m"; sourceTree = "<group>"; };
+		C9B52D0F221CAFA7006C7423 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		C9B52D10221CB33C006C7423 /* CollectionViewModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewModelDelegate.h; sourceTree = "<group>"; };
+		C9B52D11221CB33C006C7423 /* CollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewModel.m; sourceTree = "<group>"; };
+		C9B52D12221CB33C006C7423 /* CollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewModel.h; sourceTree = "<group>"; };
+		C9B52D13221CB33C006C7423 /* CollectionViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewModelProtocol.h; sourceTree = "<group>"; };
+		C9B52D15221CB40A006C7423 /* ViewModelFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelFactoryProtocol.h; sourceTree = "<group>"; };
+		C9B52D16221D5CE6006C7423 /* CommonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTableViewController.h; sourceTree = "<group>"; };
+		C9B52D17221D5CE6006C7423 /* CommonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTableViewController.m; sourceTree = "<group>"; };
+		C9B52D1A221D6390006C7423 /* ConfigurableCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurableCellProtocol.h; sourceTree = "<group>"; };
+		C9B52D1C221D69B2006C7423 /* UserInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoTableViewCell.h; sourceTree = "<group>"; };
+		C9B52D1D221D69B2006C7423 /* UserInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoTableViewCell.m; sourceTree = "<group>"; };
+		C9B52D1F221D69CD006C7423 /* TrackTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackTableViewCell.h; sourceTree = "<group>"; };
+		C9B52D20221D69CD006C7423 /* TrackTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackTableViewCell.m; sourceTree = "<group>"; };
+		C9B52D22221D69FA006C7423 /* UserProfileViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfileViewModel.h; sourceTree = "<group>"; };
+		C9B52D23221D69FA006C7423 /* UserProfileViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewModel.m; sourceTree = "<group>"; };
+		C9B52D25221D6A5C006C7423 /* UserProfileViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfileViewModelProtocol.h; sourceTree = "<group>"; };
+		C9B52D27221D6B25006C7423 /* UserInfoCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoCellViewModel.h; sourceTree = "<group>"; };
+		C9B52D28221D6B25006C7423 /* UserInfoCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoCellViewModel.m; sourceTree = "<group>"; };
+		C9B52D2A221D6B37006C7423 /* TrackCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackCellViewModel.h; sourceTree = "<group>"; };
+		C9B52D2B221D6B37006C7423 /* TrackCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackCellViewModel.m; sourceTree = "<group>"; };
+		C9B52D2D221D6D2D006C7423 /* UserInfoCellViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoCellViewModelProtocol.h; sourceTree = "<group>"; };
+		C9B52D2E221D6D42006C7423 /* TrackCellViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackCellViewModelProtocol.h; sourceTree = "<group>"; };
+		C9B52D2F221D859E006C7423 /* UITableView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Util.h"; sourceTree = "<group>"; };
+		C9B52D30221D859E006C7423 /* UITableView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Util.m"; sourceTree = "<group>"; };
+		C9B52D32221D87F6006C7423 /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
+		C9B52D34221D8813006C7423 /* TrackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; };
+		C9B52D39221D9EBC006C7423 /* UserProfileServiceLocatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfileServiceLocatorProtocol.h; sourceTree = "<group>"; };
+		C9B52D3A221D9EDC006C7423 /* UserProfileServiceLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserProfileServiceLocator.h; sourceTree = "<group>"; };
+		C9B52D3B221D9EDC006C7423 /* UserProfileServiceLocator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserProfileServiceLocator.m; sourceTree = "<group>"; };
+		C9B52D3E221DE218006C7423 /* ErrorHandlerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorHandlerProtocol.h; sourceTree = "<group>"; };
+		C9B52D3F221DE381006C7423 /* ErrorPresentationHandlerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorPresentationHandlerProtocol.h; sourceTree = "<group>"; };
+		C9B52D40221DEB90006C7423 /* UIViewController+ErrorHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ErrorHandling.h"; sourceTree = "<group>"; };
+		C9B52D41221DEB90006C7423 /* UIViewController+ErrorHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ErrorHandling.m"; sourceTree = "<group>"; };
+		C9B52D44221DFBF6006C7423 /* UIView+GentleShowAndDismiss.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GentleShowAndDismiss.h"; sourceTree = "<group>"; };
+		C9B52D45221DFBF6006C7423 /* UIView+GentleShowAndDismiss.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GentleShowAndDismiss.m"; sourceTree = "<group>"; };
+		C9B52D48221E04F7006C7423 /* TextLabelReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextLabelReusableView.h; sourceTree = "<group>"; };
+		C9B52D49221E04F7006C7423 /* TextLabelReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextLabelReusableView.m; sourceTree = "<group>"; };
+		C9B52D4B221E0509006C7423 /* TextLabelReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextLabelReusableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD68DF0CD9818B8038A4C494 /* libPods-SoundcloudProfile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +177,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D044E4A9932E2EB30EBB852 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A23511A7D545C8D08A8DC16 /* Pods-SoundcloudProfile.debug.xcconfig */,
+				B9E03F9ED345E216C2367D0C /* Pods-SoundcloudProfile.release.xcconfig */,
+				3A4FC91991B0F2DA184D2789 /* Pods-SoundcloudProfile.debug.xcconfig */,
+				4C9F6597D46C05C08AA66C36 /* Pods-SoundcloudProfile.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B25460AB36DB2E51125A9562 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				831CF3EEA560A268DAD90BFF /* libPods-SoundcloudProfile.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9B52C75221B09B9006C7423 = {
 			isa = PBXGroup;
 			children = (
 				C9B52C80221B09B9006C7423 /* SoundcloudProfile */,
 				C9B52C99221B09BB006C7423 /* SoundcloudProfileTests */,
 				C9B52C7F221B09B9006C7423 /* Products */,
+				7D044E4A9932E2EB30EBB852 /* Pods */,
+				B25460AB36DB2E51125A9562 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,15 +219,17 @@
 		C9B52C80221B09B9006C7423 /* SoundcloudProfile */ = {
 			isa = PBXGroup;
 			children = (
-				C9B52C81221B09B9006C7423 /* AppDelegate.h */,
-				C9B52C82221B09B9006C7423 /* AppDelegate.m */,
-				C9B52C84221B09B9006C7423 /* ViewController.h */,
-				C9B52C85221B09B9006C7423 /* ViewController.m */,
-				C9B52C87221B09B9006C7423 /* Main.storyboard */,
-				C9B52C8A221B09BB006C7423 /* Assets.xcassets */,
-				C9B52C8C221B09BB006C7423 /* LaunchScreen.storyboard */,
-				C9B52C8F221B09BB006C7423 /* Info.plist */,
-				C9B52C90221B09BB006C7423 /* main.m */,
+				C9B52D3D221DE137006C7423 /* Common */,
+				C9B52CB7221C1F96006C7423 /* DataModel */,
+				C9B52CCF221C2FE1006C7423 /* Model */,
+				C9B52CA5221B0A42006C7423 /* NetworkClient */,
+				C9B52CCB221C2E6F006C7423 /* Resourses */,
+				C9B52CD6221C3B2A006C7423 /* ServiceLocators */,
+				C9B52CAF221C0B71006C7423 /* Services */,
+				C9B52CCA221C2E59006C7423 /* SupportFiles */,
+				C9B52CD4221C343A006C7423 /* Utils */,
+				C9B52CC5221C2E26006C7423 /* View */,
+				C9B52CCC221C2FC3006C7423 /* ViewModel */,
 			);
 			path = SoundcloudProfile;
 			sourceTree = "<group>";
@@ -103,6 +243,331 @@
 			path = SoundcloudProfileTests;
 			sourceTree = "<group>";
 		};
+		C9B52CA5221B0A42006C7423 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CA6221B0A61006C7423 /* NetworkClient.h */,
+				C9B52CA7221B0A61006C7423 /* NetworkClient.m */,
+				C9B52CA9221B0CE8006C7423 /* NetworkClientProtocol.h */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		C9B52CAF221C0B71006C7423 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CB2221C0B9E006C7423 /* ResponseSerializer */,
+				C9B52CB1221C0B92006C7423 /* RequestSerailizer */,
+				C9B52CB0221C0B81006C7423 /* UsersService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C9B52CB0221C0B81006C7423 /* UsersService */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CB4221C1F82006C7423 /* UsersService.h */,
+				C9B52CB5221C1F82006C7423 /* UsersService.m */,
+				C9B52CB3221C1F72006C7423 /* UsersServiceProtocol.h */,
+			);
+			path = UsersService;
+			sourceTree = "<group>";
+		};
+		C9B52CB1221C0B92006C7423 /* RequestSerailizer */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CBE221C245D006C7423 /* Users */,
+			);
+			path = RequestSerailizer;
+			sourceTree = "<group>";
+		};
+		C9B52CB2221C0B9E006C7423 /* ResponseSerializer */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CBD221C2458006C7423 /* Users */,
+			);
+			path = ResponseSerializer;
+			sourceTree = "<group>";
+		};
+		C9B52CB7221C1F96006C7423 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CC1221C2DA7006C7423 /* PONSO */,
+				C9B52CB9221C1FB9006C7423 /* DTO */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		C9B52CB9221C1FB9006C7423 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CBA221C1FCD006C7423 /* UserInfoDTO.h */,
+				C9B52CBB221C1FCD006C7423 /* UserInfoDTO.m */,
+				C9B52CE6221C4E05006C7423 /* TrackListDTO.h */,
+				C9B52CE7221C4E05006C7423 /* TrackListDTO.m */,
+				C9B52CE9221C4E1D006C7423 /* TrackDTO.h */,
+				C9B52CEA221C4E1D006C7423 /* TrackDTO.m */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		C9B52CBD221C2458006C7423 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CC0221C253B006C7423 /* UserResponseSerializerProtocol.h */,
+				C9B52CDC221C48BB006C7423 /* UserResponseSerializer.h */,
+				C9B52CDD221C48BB006C7423 /* UserResponseSerializer.m */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		C9B52CBE221C245D006C7423 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CBF221C2526006C7423 /* UserRequestSerializerProtocol.h */,
+				C9B52CDF221C48D1006C7423 /* UserRequestSerializer.h */,
+				C9B52CE0221C48D1006C7423 /* UserRequestSerializer.m */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		C9B52CC1221C2DA7006C7423 /* PONSO */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CC2221C2DB7006C7423 /* UserObject.h */,
+				C9B52CC3221C2DB7006C7423 /* UserObject.m */,
+				C9B52CE2221C4DEC006C7423 /* TrackObject.h */,
+				C9B52CE3221C4DEC006C7423 /* TrackObject.m */,
+			);
+			path = PONSO;
+			sourceTree = "<group>";
+		};
+		C9B52CC5221C2E26006C7423 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D43221DFBD4006C7423 /* Categories */,
+				C9B52CC8221C2E3E006C7423 /* Common */,
+				C9B52CC7221C2E38006C7423 /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9B52CC7221C2E38006C7423 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D47221E043F006C7423 /* SupplementaryViews */,
+				C9B52D1B221D68ED006C7423 /* Cells */,
+				C9B52C84221B09B9006C7423 /* ProfileViewController.h */,
+				C9B52C85221B09B9006C7423 /* ProfileViewController.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C9B52CC8221C2E3E006C7423 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D19221D6372006C7423 /* Cells */,
+				C9B52D16221D5CE6006C7423 /* CommonTableViewController.h */,
+				C9B52D17221D5CE6006C7423 /* CommonTableViewController.m */,
+				C9B52D3F221DE381006C7423 /* ErrorPresentationHandlerProtocol.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C9B52CCA221C2E59006C7423 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52C81221B09B9006C7423 /* AppDelegate.h */,
+				C9B52C82221B09B9006C7423 /* AppDelegate.m */,
+				C9B52C8F221B09BB006C7423 /* Info.plist */,
+				C9B52C90221B09BB006C7423 /* main.m */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		C9B52CCB221C2E6F006C7423 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52C87221B09B9006C7423 /* Main.storyboard */,
+				C9B52C8A221B09BB006C7423 /* Assets.xcassets */,
+				C9B52C8C221B09BB006C7423 /* LaunchScreen.storyboard */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		C9B52CCC221C2FC3006C7423 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CCD221C2FCF006C7423 /* Common */,
+				C9B52CCE221C2FD5006C7423 /* UserProfile */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C9B52CCD221C2FCF006C7423 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D15221CB40A006C7423 /* ViewModelFactoryProtocol.h */,
+				C9B52D12221CB33C006C7423 /* CollectionViewModel.h */,
+				C9B52D11221CB33C006C7423 /* CollectionViewModel.m */,
+				C9B52D10221CB33C006C7423 /* CollectionViewModelDelegate.h */,
+				C9B52D13221CB33C006C7423 /* CollectionViewModelProtocol.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C9B52CCE221C2FD5006C7423 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D26221D6B08006C7423 /* Items */,
+				C9B52D22221D69FA006C7423 /* UserProfileViewModel.h */,
+				C9B52D23221D69FA006C7423 /* UserProfileViewModel.m */,
+				C9B52D25221D6A5C006C7423 /* UserProfileViewModelProtocol.h */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		C9B52CCF221C2FE1006C7423 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CF0221CAD03006C7423 /* DataSource */,
+				C9B52CD0221C2FE5006C7423 /* UserProfileModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9B52CD0221C2FE5006C7423 /* UserProfileModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CED221CAC46006C7423 /* UserProfileModel.h */,
+				C9B52CEE221CAC46006C7423 /* UserProfileModel.m */,
+				C9B52CEC221CAC1D006C7423 /* UserProfileModelProtocol.h */,
+			);
+			path = UserProfileModel;
+			sourceTree = "<group>";
+		};
+		C9B52CD4221C343A006C7423 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CD5221C3451006C7423 /* SafeBlock.h */,
+				C9B52D0F221CAFA7006C7423 /* Defines.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C9B52CD6221C3B2A006C7423 /* ServiceLocators */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D38221D9EA2006C7423 /* UserProfile */,
+				C9B52D37221D9E98006C7423 /* UserService */,
+			);
+			path = ServiceLocators;
+			sourceTree = "<group>";
+		};
+		C9B52CF0221CAD03006C7423 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CF2221CAD32006C7423 /* BasicDataSource.h */,
+				C9B52D01221CAD33006C7423 /* BasicDataSource.m */,
+				C9B52CFD221CAD32006C7423 /* ComposedDataSource.h */,
+				C9B52CF6221CAD32006C7423 /* ComposedDataSource.mm */,
+				C9B52CF4221CAD32006C7423 /* ComposedDataSource+Private.h */,
+				C9B52CFE221CAD32006C7423 /* ComposedDataSource+Private.m */,
+				C9B52CF1221CAD31006C7423 /* DataSource_Private.h */,
+				C9B52D00221CAD33006C7423 /* DataSource.h */,
+				C9B52D03221CAD33006C7423 /* DataSource.m */,
+				C9B52CF7221CAD32006C7423 /* DataSourceDelegate.h */,
+				C9B52D0C221CAEA0006C7423 /* NSIndexPath+DataSource.h */,
+				C9B52D0D221CAEA0006C7423 /* NSIndexPath+DataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		C9B52D19221D6372006C7423 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D1A221D6390006C7423 /* ConfigurableCellProtocol.h */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C9B52D1B221D68ED006C7423 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D1F221D69CD006C7423 /* TrackTableViewCell.h */,
+				C9B52D20221D69CD006C7423 /* TrackTableViewCell.m */,
+				C9B52D34221D8813006C7423 /* TrackTableViewCell.xib */,
+				C9B52D1C221D69B2006C7423 /* UserInfoTableViewCell.h */,
+				C9B52D1D221D69B2006C7423 /* UserInfoTableViewCell.m */,
+				C9B52D32221D87F6006C7423 /* UserInfoTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C9B52D26221D6B08006C7423 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D2A221D6B37006C7423 /* TrackCellViewModel.h */,
+				C9B52D2B221D6B37006C7423 /* TrackCellViewModel.m */,
+				C9B52D2E221D6D42006C7423 /* TrackCellViewModelProtocol.h */,
+				C9B52D27221D6B25006C7423 /* UserInfoCellViewModel.h */,
+				C9B52D28221D6B25006C7423 /* UserInfoCellViewModel.m */,
+				C9B52D2D221D6D2D006C7423 /* UserInfoCellViewModelProtocol.h */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		C9B52D37221D9E98006C7423 /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52CD8221C3B55006C7423 /* UserServiceServiceLocatorProtocol.h */,
+				C9B52CD9221C3B75006C7423 /* UserServiceServiceLocator.h */,
+				C9B52CDA221C3B75006C7423 /* UserServiceServiceLocator.m */,
+			);
+			path = UserService;
+			sourceTree = "<group>";
+		};
+		C9B52D38221D9EA2006C7423 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D39221D9EBC006C7423 /* UserProfileServiceLocatorProtocol.h */,
+				C9B52D3A221D9EDC006C7423 /* UserProfileServiceLocator.h */,
+				C9B52D3B221D9EDC006C7423 /* UserProfileServiceLocator.m */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		C9B52D3D221DE137006C7423 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D3E221DE218006C7423 /* ErrorHandlerProtocol.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C9B52D43221DFBD4006C7423 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D2F221D859E006C7423 /* UITableView+Util.h */,
+				C9B52D30221D859E006C7423 /* UITableView+Util.m */,
+				C9B52D44221DFBF6006C7423 /* UIView+GentleShowAndDismiss.h */,
+				C9B52D45221DFBF6006C7423 /* UIView+GentleShowAndDismiss.m */,
+				C9B52D40221DEB90006C7423 /* UIViewController+ErrorHandling.h */,
+				C9B52D41221DEB90006C7423 /* UIViewController+ErrorHandling.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C9B52D47221E043F006C7423 /* SupplementaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				C9B52D48221E04F7006C7423 /* TextLabelReusableView.h */,
+				C9B52D49221E04F7006C7423 /* TextLabelReusableView.m */,
+				C9B52D4B221E0509006C7423 /* TextLabelReusableView.xib */,
+			);
+			path = SupplementaryViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +575,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9B52C9F221B09BB006C7423 /* Build configuration list for PBXNativeTarget "SoundcloudProfile" */;
 			buildPhases = (
+				C09075758141B0CF0C44EFE2 /* [CP] Check Pods Manifest.lock */,
 				C9B52C7A221B09B9006C7423 /* Sources */,
 				C9B52C7B221B09B9006C7423 /* Frameworks */,
 				C9B52C7C221B09B9006C7423 /* Resources */,
@@ -183,8 +649,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B52D33221D87F6006C7423 /* UserInfoTableViewCell.xib in Resources */,
 				C9B52C8E221B09BB006C7423 /* LaunchScreen.storyboard in Resources */,
 				C9B52C8B221B09BB006C7423 /* Assets.xcassets in Resources */,
+				C9B52D4C221E0509006C7423 /* TextLabelReusableView.xib in Resources */,
+				C9B52D35221D8813006C7423 /* TrackTableViewCell.xib in Resources */,
 				C9B52C89221B09B9006C7423 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,14 +667,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C09075758141B0CF0C44EFE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundcloudProfile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9B52C7A221B09B9006C7423 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B52C86221B09B9006C7423 /* ViewController.m in Sources */,
+				C9B52D0B221CAD33006C7423 /* DataSource.m in Sources */,
+				C9B52CE8221C4E05006C7423 /* TrackListDTO.m in Sources */,
+				C9B52CE4221C4DEC006C7423 /* TrackObject.m in Sources */,
+				C9B52D18221D5CE6006C7423 /* CommonTableViewController.m in Sources */,
+				C9B52D4A221E04F7006C7423 /* TextLabelReusableView.m in Sources */,
+				C9B52CEF221CAC46006C7423 /* UserProfileModel.m in Sources */,
+				C9B52D24221D69FA006C7423 /* UserProfileViewModel.m in Sources */,
+				C9B52D05221CAD33006C7423 /* ComposedDataSource.mm in Sources */,
+				C9B52D07221CAD33006C7423 /* ComposedDataSource+Private.m in Sources */,
+				C9B52D2C221D6B37006C7423 /* TrackCellViewModel.m in Sources */,
+				C9B52D14221CB33D006C7423 /* CollectionViewModel.m in Sources */,
+				C9B52C86221B09B9006C7423 /* ProfileViewController.m in Sources */,
 				C9B52C91221B09BB006C7423 /* main.m in Sources */,
+				C9B52CBC221C1FCD006C7423 /* UserInfoDTO.m in Sources */,
+				C9B52D29221D6B25006C7423 /* UserInfoCellViewModel.m in Sources */,
+				C9B52CB6221C1F82006C7423 /* UsersService.m in Sources */,
+				C9B52D09221CAD33006C7423 /* BasicDataSource.m in Sources */,
+				C9B52CC4221C2DB7006C7423 /* UserObject.m in Sources */,
+				C9B52D42221DEB90006C7423 /* UIViewController+ErrorHandling.m in Sources */,
+				C9B52CEB221C4E1D006C7423 /* TrackDTO.m in Sources */,
 				C9B52C83221B09B9006C7423 /* AppDelegate.m in Sources */,
+				C9B52CDB221C3B75006C7423 /* UserServiceServiceLocator.m in Sources */,
+				C9B52CE1221C48D1006C7423 /* UserRequestSerializer.m in Sources */,
+				C9B52CA8221B0A61006C7423 /* NetworkClient.m in Sources */,
+				C9B52D46221DFBF6006C7423 /* UIView+GentleShowAndDismiss.m in Sources */,
+				C9B52CDE221C48BB006C7423 /* UserResponseSerializer.m in Sources */,
+				C9B52D3C221D9EDC006C7423 /* UserProfileServiceLocator.m in Sources */,
+				C9B52D31221D859E006C7423 /* UITableView+Util.m in Sources */,
+				C9B52D1E221D69B2006C7423 /* UserInfoTableViewCell.m in Sources */,
+				C9B52D21221D69CD006C7423 /* TrackTableViewCell.m in Sources */,
+				C9B52D0E221CAEA0006C7423 /* NSIndexPath+DataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,11 +879,12 @@
 		};
 		C9B52CA0221B09BB006C7423 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A23511A7D545C8D08A8DC16 /* Pods-SoundcloudProfile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 567CGVGBZX;
-				INFOPLIST_FILE = SoundcloudProfile/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SoundcloudProfile/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,11 +897,12 @@
 		};
 		C9B52CA1221B09BB006C7423 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9E03F9ED345E216C2367D0C /* Pods-SoundcloudProfile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 567CGVGBZX;
-				INFOPLIST_FILE = SoundcloudProfile/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SoundcloudProfile/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
