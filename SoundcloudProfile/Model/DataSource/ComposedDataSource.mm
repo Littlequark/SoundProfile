@@ -11,6 +11,8 @@
 
 #import "NSIndexPath+DataSource.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface ComposedDataSource () <DataSourceDelegate>
 {
     std::unordered_map<NSUInteger, ComposedMapping *> _globalSectionToMappings;
@@ -136,7 +138,7 @@
     return result;
 }
 
-- (id)itemAtIndexPath:(NSIndexPath *)indexPath
+- (id _Nullable)itemAtIndexPath:(NSIndexPath *)indexPath
 {
     ComposedMapping *mapping = [self mappingForGlobalSection:indexPath.sp_section];
     
@@ -169,7 +171,7 @@
     return results;
 }
 
-- (NSString *)titleForSection:(NSUInteger)section {
+- (NSString *_Nullable)titleForSection:(NSUInteger)section {
     ComposedMapping *mapping = [self mappingForGlobalSection:section];
     
     NSUInteger localSection = [mapping localSectionForGlobalSection:section];
@@ -177,7 +179,7 @@
     return [mapping.dataSource titleForSection:localSection];
 }
 
-- (NSArray<NSString *> *)sectionIndexTitles {
+- (NSArray<NSString *> *_Nullable)sectionIndexTitles {
     NSMutableArray<NSString *> *indexTitles = [[NSMutableArray<NSString *> alloc] init];
     for (DataSource *dataSource in self.dataSources) {
         NSArray<NSString *> *localIndexTitles = [dataSource sectionIndexTitles];
@@ -271,7 +273,7 @@
     return [mapping globalSectionForLocalSection:0];
 }
 
-- (DataSource *)dataSourceForSectionIndex:(NSUInteger)sectionIndex {
+- (DataSource *_Nullable)dataSourceForSectionIndex:(NSUInteger)sectionIndex {
     ComposedMapping *mapping = [self mappingForGlobalSection:sectionIndex];
     return mapping.dataSource;
 }
@@ -385,3 +387,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

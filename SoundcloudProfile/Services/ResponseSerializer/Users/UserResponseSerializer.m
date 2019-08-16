@@ -10,10 +10,27 @@
 #import "UserInfoDTO.h"
 #import "TrackDTO.h"
 #import "TrackListDTO.h"
+#import "Defines.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @implementation UserResponseSerializer
+
+- (NSArray<UserInfoDTO *> *)serializeUserDTOsFromResponse:(id)response {
+    if (![response isKindOfClass:NSArray.class]) {
+        ////ParameterAssertLog
+        return @[];
+    }
+    NSArray<NSDictionary *> *userDictionaries = (NSArray<NSDictionary *> *)response;
+    NSMutableArray<UserInfoDTO *> *userDTOs = [[NSMutableArray<UserInfoDTO *> alloc] init];
+    for (NSDictionary *userDictionary in userDictionaries) {
+        UserInfoDTO *userInfoDTO = [self serializeUserInfoFromResponse:userDictionary];
+        if (userInfoDTO != nil) {
+            [userDTOs addObject:userInfoDTO];
+        }
+    }
+    return userDTOs.copy;
+}
 
 - (UserInfoDTO *_Nullable)serializeUserInfoFromResponse:(id)response {
     if (![response isKindOfClass:NSDictionary.class]) {
@@ -26,13 +43,14 @@ NS_ASSUME_NONNULL_BEGIN
         return nil;
     }
     UserInfoDTO *userInfoDTO = [[UserInfoDTO alloc] init];
-    userInfoDTO.userId = responseDictionary[@"id"];
-    userInfoDTO.firstName = responseDictionary[@"first_name"];
-    userInfoDTO.lastName = responseDictionary[@"last_name"];
-    userInfoDTO.avatarURLString = responseDictionary[@"avatar_url"];
-    userInfoDTO.username = responseDictionary[@"username"];
-    userInfoDTO.location = responseDictionary[@"city"];
-    userInfoDTO.userTracksCount = responseDictionary[@"track_count"];
+    userInfoDTO.userId = ObjectOrNilForKey(responseDictionary, @"id");
+    userInfoDTO.firstName = ObjectOrNilForKey(responseDictionary, @"first_name");
+    userInfoDTO.lastName = ObjectOrNilForKey(responseDictionary, @"last_name");
+    userInfoDTO.avatarURLString = ObjectOrNilForKey(responseDictionary ,@"avatar_url");
+    userInfoDTO.username = ObjectOrNilForKey(responseDictionary, @"username");
+    userInfoDTO.location = ObjectOrNilForKey(responseDictionary, @"city");
+    userInfoDTO.userTracksCount = ObjectOrNilForKey(responseDictionary, @"track_count");
+    userInfoDTO.favouritesCount = ObjectOrNilForKey(responseDictionary, @"public_favorites_count");
     return userInfoDTO;
 }
 
@@ -48,8 +66,8 @@ NS_ASSUME_NONNULL_BEGIN
     }
     if ([response isKindOfClass:NSDictionary.class]) {
         NSDictionary *responseDictionary = (NSDictionary *)response;
-        trackListDTO.nextPageURLString = responseDictionary[@"next_href"];
-        trackDictionaries = responseDictionary[@"collection"];
+        trackListDTO.nextPageURLString = ObjectOrNilForKey(responseDictionary, @"next_href");
+        trackDictionaries = ObjectOrNilForKey(responseDictionary, @"collection");
     }
     trackListDTO.tracksDTOList = [self trackDTOsFromDictionaries:trackDictionaries];
     return trackListDTO;
@@ -76,13 +94,13 @@ NS_ASSUME_NONNULL_BEGIN
         return nil;
     }
     TrackDTO *trackDTO = [[TrackDTO alloc] init];
-    trackDTO.trackId = trackDict[@"id"];
-    trackDTO.userId = trackDict[@"user_id"];
-    trackDTO.title = trackDict[@"title"];
-    trackDTO.trackDescription = trackDict[@"description"];
-    trackDTO.artworkURLString = trackDict[@"artwork_url"];
-    trackDTO.authorName = trackDict[@"user"][@"username"];
-    trackDTO.duration = trackDict[@"duration"];
+    trackDTO.trackId = ObjectOrNilForKey(trackDict, @"id");
+    trackDTO.userId = ObjectOrNilForKey(trackDict, @"user_id");
+    trackDTO.title = ObjectOrNilForKey(trackDict, @"title");
+    trackDTO.trackDescription = ObjectOrNilForKey(trackDict, @"description");
+    trackDTO.artworkURLString = ObjectOrNilForKey(trackDict, @"artwork_url");
+    trackDTO.authorName = ObjectOrNilForKey(ObjectOrNilForKey(trackDict, @"user"), @"username");
+    trackDTO.duration = ObjectOrNilForKey(trackDict, @"duration");
     return trackDTO;
 }
 

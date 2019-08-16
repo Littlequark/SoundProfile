@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSString *username;
 @property (nonatomic) NSString *location;
 @property (nonatomic) NSNumber *userTracksCount;
+@property (nonatomic) NSNumber *favouritesCount;
 
 @end
 

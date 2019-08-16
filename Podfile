@@ -4,5 +4,6 @@ target 'SoundcloudProfile' do
   
   pod 'AFNetworking', '3.2.1'
   pod 'SDWebImage', '4.4.5'
+  pod 'UIViewController+KeyboardAnimation'
   
 end

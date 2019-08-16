@@ -14,7 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol UserInfoCellViewModelProtocol <ViewModelFactoryProtocol>
 
 @property (nonatomic, readonly, nullable) NSString *username;
-@property (nonatomic, readonly, nullable) NSString *location;
+@property (nonatomic, readonly, nullable) NSString *fullName;
+@property (nonatomic, readonly, nullable) NSString *city;
 @property (nonatomic, readonly, nullable) NSURL *avatarURL;
 
 @end

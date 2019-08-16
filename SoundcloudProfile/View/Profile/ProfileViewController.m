@@ -95,14 +95,11 @@ NSUInteger TracksSection = 1;
     return  footerView;
 }
 
-#pragma mark - UITableViewDelegate
+#pragma mark - UIScrollViewDelegate
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == TracksSection) {
-        NSUInteger numberOfTracks = [self.viewModel numberOfObjectsInSection:indexPath.section];
-        if (numberOfTracks - indexPath.row == 2) {
-            [self.viewModel loadMoreIfPossible];
-        }
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.frame.size.height) {
+        [self.viewModel loadMoreIfPossible];
     }
 }
 

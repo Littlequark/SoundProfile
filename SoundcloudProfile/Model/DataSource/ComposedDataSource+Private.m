@@ -5,6 +5,8 @@
 #import "ComposedDataSource+Private.h"
 #import "NSIndexPath+DataSource.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface ComposedMapping ()
 
 @property (nonatomic, retain) NSMutableDictionary *globalToLocalSections;
@@ -18,7 +20,7 @@
     return [self initWithDataSource:nil];
 }
 
-- (instancetype)initWithDataSource:(DataSource *)dataSource {
+- (instancetype)initWithDataSource:(DataSource *_Nullable)dataSource {
     self = [super init];
     if (self) {
         _dataSource = dataSource;
@@ -28,7 +30,7 @@
     return self;
 }
 
-- (id)copyWithZone:(NSZone *)zone {
+- (id)copyWithZone:(NSZone *_Nullable)zone {
     ComposedMapping *result = [[[self class] allocWithZone:zone] init];
     if (!result) {
         return nil;
@@ -97,3 +99,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

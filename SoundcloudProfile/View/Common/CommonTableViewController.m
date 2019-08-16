@@ -7,7 +7,9 @@
 
 #import "ConfigurableCellProtocol.h"
 #import "CollectionViewModelProtocol.h"
+#import <UIViewController+KeyboardAnimation.h>
 #import "SafeBlock.h"
+#import "Scope.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -62,6 +64,20 @@ const CGFloat DefaultGrouppedTableHeaderFooterHeight = 0.1f; // Using zero value
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupTableView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    @weakify(self);
+    [self an_subscribeKeyboardFrameChangesWithAnimations:^(CGRect keyboardRect, NSTimeInterval duration) {
+        @strongify(self);
+        [self updateUIRelatedToKeyboardRect:keyboardRect];
+    }];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self an_unsubscribeKeyboardFrameChanges];
 }
 
 - (void)setupTableView {
@@ -141,6 +157,24 @@ const CGFloat DefaultGrouppedTableHeaderFooterHeight = 0.1f; // Using zero value
                                                                       options:0
                                                                       metrics:nil
                                                                         views:viewsAutoLayoutBinding]];
+}
+
+- (void)updateUIRelatedToKeyboardRect:(CGRect)keyboardRect {
+    UIScrollView *scrollView = self.tableView;
+    CGRect convertedKeyboardRect = [self.view convertRect:keyboardRect fromView:nil];
+    CGFloat keyboardY = CGRectGetMinY(convertedKeyboardRect);
+    CGFloat viewBottomVisibleY = CGRectGetHeight(self.view.frame) - self.bottomLayoutGuide.length;
+    CGFloat scrollViewBottomY = CGRectGetMaxY(scrollView.frame);
+    CGFloat minVisibleY = MIN(keyboardY, viewBottomVisibleY);
+    CGFloat bottomInset = scrollViewBottomY > minVisibleY ? scrollViewBottomY - minVisibleY : 0.f;
+    
+    UIEdgeInsets contentInset = scrollView.contentInset;
+    contentInset.bottom = bottomInset;
+    scrollView.contentInset = contentInset;
+    
+    UIEdgeInsets scrollIndicatorInsets = scrollView.scrollIndicatorInsets;
+    scrollIndicatorInsets.bottom = bottomInset;
+    scrollView.scrollIndicatorInsets = scrollIndicatorInsets;
 }
 
 #pragma mark - UITableViewDataSource

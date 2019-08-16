@@ -6,11 +6,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class UserObject;
 @protocol UserProfileViewModelProtocol;
 
 @protocol UserProfileServiceLocatorProtocol <NSObject>
 
-- (id<UserProfileViewModelProtocol>)userProfileViewModel;
+- (id<UserProfileViewModelProtocol>)profileViewModelForUser:(UserObject *)user;
 
 @end
 

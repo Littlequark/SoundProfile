@@ -4,6 +4,8 @@
 
 #import "DataSource.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface ComposedDataSource : DataSource
 
 - (void)addDataSource:(DataSource *)dataSource;
@@ -13,9 +15,11 @@
 
 - (NSUInteger)sectionIndexForDataSource:(DataSource *)dataSource;
 
-- (DataSource *)dataSourceForSectionIndex:(NSUInteger)sectionIndex;
+- (DataSource *_Nullable)dataSourceForSectionIndex:(NSUInteger)sectionIndex;
 
 - (void)seedsUpdatedMapping;
 - (void)updateMappingsIfNeeded;
 
 @end
+
+NS_ASSUME_NONNULL_END

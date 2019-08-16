@@ -13,6 +13,8 @@
 #import "UserRequestSerializer.h"
 #import "UserResponseSerializer.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation UserServiceServiceLocator
 
 - (id<UsersServiceProtocol>)userService {
@@ -38,3 +40,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

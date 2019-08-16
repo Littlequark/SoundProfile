@@ -4,6 +4,8 @@
 
 #import "UITableView+Util.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation UITableView(Util)
 
 - (void)sp_registerNibForCellClass:(Class)cellClass {
@@ -52,3 +54,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

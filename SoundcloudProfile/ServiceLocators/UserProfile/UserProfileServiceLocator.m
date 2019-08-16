@@ -15,17 +15,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation UserProfileServiceLocator
 
-- (id<UserProfileViewModelProtocol>)userProfileViewModel {
+- (id<UserProfileViewModelProtocol>)profileViewModelForUser:(id)user {
     UserProfileViewModel *userProfileViewModel = [[UserProfileViewModel alloc] init];
-    userProfileViewModel.model = self.userProfileModel;
+    userProfileViewModel.model = [self profileModelForUser:user];
     return userProfileViewModel;
 }
 
 #pragma mark - Private
 
-- (id<UserProfileModelProtocol>)userProfileModel {
+- (id<UserProfileModelProtocol>)profileModelForUser:(UserObject *)user {
     UserProfileModel *model = [[UserProfileModel alloc] init];
     model.userService = self.userService;
+    model.user = user;
     return model;
 }
 

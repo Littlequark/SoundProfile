@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9180DA6221EE74000F8ECA8 /* UserPonsomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9180DA5221EE74000F8ECA8 /* UserPonsomizer.m */; };
+		C9180DA9221EE8CA00F8ECA8 /* TrackPonsomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9180DA8221EE8CA00F8ECA8 /* TrackPonsomizer.m */; };
+		C93CBFC4222467A000C35F76 /* FetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CBFB0222467A000C35F76 /* FetchedResultsController.m */; };
+		C93CBFC5222467A000C35F76 /* FetchedResultsSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CBFB7222467A000C35F76 /* FetchedResultsSectionInfo.m */; };
+		C93CBFC6222467A000C35F76 /* FetchedResultsControllerModelChange.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CBFB8222467A000C35F76 /* FetchedResultsControllerModelChange.m */; };
+		C93CBFC7222467A000C35F76 /* FetchedResultsControllerDelegateEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CBFB9222467A000C35F76 /* FetchedResultsControllerDelegateEvent.m */; };
+		C93CBFC8222467A000C35F76 /* FetchedResultsControllerModel+ModelState.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CBFBB222467A000C35F76 /* FetchedResultsControllerModel+ModelState.m */; };
+		C93CBFC9222467A000C35F76 /* FetchedResultsControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CBFBD222467A000C35F76 /* FetchedResultsControllerModel.m */; };
+		C93CBFCA222467A000C35F76 /* FetchedResultsControllerModel+ModelChange.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CBFBF222467A000C35F76 /* FetchedResultsControllerModel+ModelChange.m */; };
+		C93CBFD222246C9100C35F76 /* DummyDataUpdatesObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CBFCF22246C9100C35F76 /* DummyDataUpdatesObserver.m */; };
+		C93CBFD322246C9100C35F76 /* DataUpdatesPlainObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CBFD122246C9100C35F76 /* DataUpdatesPlainObserver.m */; };
+		C93CBFD722246EE000C35F76 /* Scope.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CBFD622246EE000C35F76 /* Scope.m */; };
+		C93D44C2221F225C004CBDC4 /* UserSearchServiceLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = C93D44C1221F225C004CBDC4 /* UserSearchServiceLocator.m */; };
+		C93D44C7221F6D3F004CBDC4 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C93D44C6221F6D3F004CBDC4 /* SearchTableViewController.m */; };
 		C9B52C83221B09B9006C7423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52C82221B09B9006C7423 /* AppDelegate.m */; };
 		C9B52C86221B09B9006C7423 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52C85221B09B9006C7423 /* ProfileViewController.m */; };
 		C9B52C89221B09B9006C7423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B52C87221B09B9006C7423 /* Main.storyboard */; };
@@ -45,6 +59,9 @@
 		C9B52D46221DFBF6006C7423 /* UIView+GentleShowAndDismiss.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D45221DFBF6006C7423 /* UIView+GentleShowAndDismiss.m */; };
 		C9B52D4A221E04F7006C7423 /* TextLabelReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B52D49221E04F7006C7423 /* TextLabelReusableView.m */; };
 		C9B52D4C221E0509006C7423 /* TextLabelReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B52D4B221E0509006C7423 /* TextLabelReusableView.xib */; };
+		C9BF9E83221EC21100BD1B28 /* UserSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BF9E82221EC21100BD1B28 /* UserSearchViewController.m */; };
+		C9BF9E88221EC33200BD1B28 /* UserSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BF9E87221EC33200BD1B28 /* UserSearchViewModel.m */; };
+		C9BF9E8D221EC59300BD1B28 /* UserSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BF9E8C221EC59300BD1B28 /* UserSearchModel.m */; };
 		FD68DF0CD9818B8038A4C494 /* libPods-SoundcloudProfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 831CF3EEA560A268DAD90BFF /* libPods-SoundcloudProfile.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +81,46 @@
 		4C9F6597D46C05C08AA66C36 /* Pods-SoundcloudProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundcloudProfile.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundcloudProfile/Pods-SoundcloudProfile.release.xcconfig"; sourceTree = "<group>"; };
 		831CF3EEA560A268DAD90BFF /* libPods-SoundcloudProfile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SoundcloudProfile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E03F9ED345E216C2367D0C /* Pods-SoundcloudProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundcloudProfile.release.xcconfig"; path = "Target Support Files/Pods-SoundcloudProfile/Pods-SoundcloudProfile.release.xcconfig"; sourceTree = "<group>"; };
+		C9180DA4221EE74000F8ECA8 /* UserPonsomizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPonsomizer.h; sourceTree = "<group>"; };
+		C9180DA5221EE74000F8ECA8 /* UserPonsomizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPonsomizer.m; sourceTree = "<group>"; };
+		C9180DA7221EE8CA00F8ECA8 /* TrackPonsomizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackPonsomizer.h; sourceTree = "<group>"; };
+		C9180DA8221EE8CA00F8ECA8 /* TrackPonsomizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackPonsomizer.m; sourceTree = "<group>"; };
+		C93CBFB0222467A000C35F76 /* FetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchedResultsController.m; sourceTree = "<group>"; };
+		C93CBFB1222467A000C35F76 /* FetchedResultsControllerModel+ModelState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FetchedResultsControllerModel+ModelState.h"; sourceTree = "<group>"; };
+		C93CBFB2222467A000C35F76 /* FetchedResultsControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchedResultsControllerModel.h; sourceTree = "<group>"; };
+		C93CBFB3222467A000C35F76 /* FetchedResultsControllerModel+ModelChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FetchedResultsControllerModel+ModelChange.h"; sourceTree = "<group>"; };
+		C93CBFB4222467A000C35F76 /* FetchedResultsSectionInfoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchedResultsSectionInfoProtocol.h; sourceTree = "<group>"; };
+		C93CBFB5222467A000C35F76 /* FetchedResultsControllerModelState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchedResultsControllerModelState.h; sourceTree = "<group>"; };
+		C93CBFB6222467A000C35F76 /* FetchedResultsController+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FetchedResultsController+Protected.h"; sourceTree = "<group>"; };
+		C93CBFB7222467A000C35F76 /* FetchedResultsSectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchedResultsSectionInfo.m; sourceTree = "<group>"; };
+		C93CBFB8222467A000C35F76 /* FetchedResultsControllerModelChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchedResultsControllerModelChange.m; sourceTree = "<group>"; };
+		C93CBFB9222467A000C35F76 /* FetchedResultsControllerDelegateEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchedResultsControllerDelegateEvent.m; sourceTree = "<group>"; };
+		C93CBFBA222467A000C35F76 /* FetchedResultsControllerModelChange+PrivateInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FetchedResultsControllerModelChange+PrivateInterfaces.h"; sourceTree = "<group>"; };
+		C93CBFBB222467A000C35F76 /* FetchedResultsControllerModel+ModelState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FetchedResultsControllerModel+ModelState.m"; sourceTree = "<group>"; };
+		C93CBFBC222467A000C35F76 /* FetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchedResultsController.h; sourceTree = "<group>"; };
+		C93CBFBD222467A000C35F76 /* FetchedResultsControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchedResultsControllerModel.m; sourceTree = "<group>"; };
+		C93CBFBE222467A000C35F76 /* FetchedResultsControllerDelegateEvent+PrivateInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FetchedResultsControllerDelegateEvent+PrivateInterfaces.h"; sourceTree = "<group>"; };
+		C93CBFBF222467A000C35F76 /* FetchedResultsControllerModel+ModelChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FetchedResultsControllerModel+ModelChange.m"; sourceTree = "<group>"; };
+		C93CBFC0222467A000C35F76 /* FetchedResultsControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchedResultsControllerDelegate.h; sourceTree = "<group>"; };
+		C93CBFC1222467A000C35F76 /* FetchedResultsControllerDelegateEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchedResultsControllerDelegateEvent.h; sourceTree = "<group>"; };
+		C93CBFC2222467A000C35F76 /* FetchedResultsSectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchedResultsSectionInfo.h; sourceTree = "<group>"; };
+		C93CBFC3222467A000C35F76 /* FetchedResultsControllerModelChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchedResultsControllerModelChange.h; sourceTree = "<group>"; };
+		C93CBFCC22246C9000C35F76 /* DummyDataUpdatesObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyDataUpdatesObserver.h; sourceTree = "<group>"; };
+		C93CBFCD22246C9000C35F76 /* DataUpdatesObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUpdatesObserver.h; sourceTree = "<group>"; };
+		C93CBFCE22246C9000C35F76 /* DataUpdatesHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUpdatesHandlerProtocol.h; sourceTree = "<group>"; };
+		C93CBFCF22246C9100C35F76 /* DummyDataUpdatesObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyDataUpdatesObserver.m; sourceTree = "<group>"; };
+		C93CBFD022246C9100C35F76 /* DataUpdatesPlainObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUpdatesPlainObserver.h; sourceTree = "<group>"; };
+		C93CBFD122246C9100C35F76 /* DataUpdatesPlainObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUpdatesPlainObserver.m; sourceTree = "<group>"; };
+		C93CBFD522246EE000C35F76 /* Scope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scope.h; sourceTree = "<group>"; };
+		C93CBFD622246EE000C35F76 /* Scope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scope.m; sourceTree = "<group>"; };
+		C93CBFD822246F0A00C35F76 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		C93D44C0221F225C004CBDC4 /* UserSearchServiceLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSearchServiceLocator.h; sourceTree = "<group>"; };
+		C93D44C1221F225C004CBDC4 /* UserSearchServiceLocator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSearchServiceLocator.m; sourceTree = "<group>"; };
+		C93D44C3221F228C004CBDC4 /* UserSearchServiceLocatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSearchServiceLocatorProtocol.h; sourceTree = "<group>"; };
+		C93D44C5221F6D3F004CBDC4 /* SearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		C93D44C6221F6D3F004CBDC4 /* SearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		C93D44C9221F6DB1004CBDC4 /* FilteringViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilteringViewModelProtocol.h; sourceTree = "<group>"; };
+		C93D44CA221F6E4C004CBDC4 /* SearchViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewModelProtocol.h; sourceTree = "<group>"; };
 		C9B52C7E221B09B9006C7423 /* SoundcloudProfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundcloudProfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B52C81221B09B9006C7423 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C9B52C82221B09B9006C7423 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,6 +213,14 @@
 		C9B52D48221E04F7006C7423 /* TextLabelReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextLabelReusableView.h; sourceTree = "<group>"; };
 		C9B52D49221E04F7006C7423 /* TextLabelReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextLabelReusableView.m; sourceTree = "<group>"; };
 		C9B52D4B221E0509006C7423 /* TextLabelReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextLabelReusableView.xib; sourceTree = "<group>"; };
+		C9BF9E81221EC21100BD1B28 /* UserSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSearchViewController.h; sourceTree = "<group>"; };
+		C9BF9E82221EC21100BD1B28 /* UserSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSearchViewController.m; sourceTree = "<group>"; };
+		C9BF9E85221EC31500BD1B28 /* UserSearchViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSearchViewModelProtocol.h; sourceTree = "<group>"; };
+		C9BF9E86221EC33200BD1B28 /* UserSearchViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSearchViewModel.h; sourceTree = "<group>"; };
+		C9BF9E87221EC33200BD1B28 /* UserSearchViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSearchViewModel.m; sourceTree = "<group>"; };
+		C9BF9E8A221EC57A00BD1B28 /* UserSearchModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSearchModelProtocol.h; sourceTree = "<group>"; };
+		C9BF9E8B221EC59300BD1B28 /* UserSearchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSearchModel.h; sourceTree = "<group>"; };
+		C9BF9E8C221EC59300BD1B28 /* UserSearchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSearchModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +259,108 @@
 				831CF3EEA560A268DAD90BFF /* libPods-SoundcloudProfile.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9180DA1221EE6F600F8ECA8 /* ObjectConstructor */ = {
+			isa = PBXGroup;
+			children = (
+				C9180DA3221EE72600F8ECA8 /* Ponsomizer */,
+				C9180DA2221EE71300F8ECA8 /* Constructors */,
+			);
+			path = ObjectConstructor;
+			sourceTree = "<group>";
+		};
+		C9180DA2221EE71300F8ECA8 /* Constructors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constructors;
+			sourceTree = "<group>";
+		};
+		C9180DA3221EE72600F8ECA8 /* Ponsomizer */ = {
+			isa = PBXGroup;
+			children = (
+				C9180DA4221EE74000F8ECA8 /* UserPonsomizer.h */,
+				C9180DA5221EE74000F8ECA8 /* UserPonsomizer.m */,
+				C9180DA7221EE8CA00F8ECA8 /* TrackPonsomizer.h */,
+				C9180DA8221EE8CA00F8ECA8 /* TrackPonsomizer.m */,
+			);
+			path = Ponsomizer;
+			sourceTree = "<group>";
+		};
+		C93CBFAF222467A000C35F76 /* FetchedResultController */ = {
+			isa = PBXGroup;
+			children = (
+				C93CBFBC222467A000C35F76 /* FetchedResultsController.h */,
+				C93CBFB0222467A000C35F76 /* FetchedResultsController.m */,
+				C93CBFB6222467A000C35F76 /* FetchedResultsController+Protected.h */,
+				C93CBFC0222467A000C35F76 /* FetchedResultsControllerDelegate.h */,
+				C93CBFC1222467A000C35F76 /* FetchedResultsControllerDelegateEvent.h */,
+				C93CBFB9222467A000C35F76 /* FetchedResultsControllerDelegateEvent.m */,
+				C93CBFBE222467A000C35F76 /* FetchedResultsControllerDelegateEvent+PrivateInterfaces.h */,
+				C93CBFB2222467A000C35F76 /* FetchedResultsControllerModel.h */,
+				C93CBFBD222467A000C35F76 /* FetchedResultsControllerModel.m */,
+				C93CBFB3222467A000C35F76 /* FetchedResultsControllerModel+ModelChange.h */,
+				C93CBFBF222467A000C35F76 /* FetchedResultsControllerModel+ModelChange.m */,
+				C93CBFB1222467A000C35F76 /* FetchedResultsControllerModel+ModelState.h */,
+				C93CBFBB222467A000C35F76 /* FetchedResultsControllerModel+ModelState.m */,
+				C93CBFC3222467A000C35F76 /* FetchedResultsControllerModelChange.h */,
+				C93CBFB8222467A000C35F76 /* FetchedResultsControllerModelChange.m */,
+				C93CBFBA222467A000C35F76 /* FetchedResultsControllerModelChange+PrivateInterfaces.h */,
+				C93CBFB5222467A000C35F76 /* FetchedResultsControllerModelState.h */,
+				C93CBFC2222467A000C35F76 /* FetchedResultsSectionInfo.h */,
+				C93CBFB7222467A000C35F76 /* FetchedResultsSectionInfo.m */,
+				C93CBFB4222467A000C35F76 /* FetchedResultsSectionInfoProtocol.h */,
+			);
+			path = FetchedResultController;
+			sourceTree = "<group>";
+		};
+		C93CBFD422246C9500C35F76 /* UpdateHandler */ = {
+			isa = PBXGroup;
+			children = (
+				C93CBFCE22246C9000C35F76 /* DataUpdatesHandlerProtocol.h */,
+				C93CBFCD22246C9000C35F76 /* DataUpdatesObserver.h */,
+				C93CBFD022246C9100C35F76 /* DataUpdatesPlainObserver.h */,
+				C93CBFD122246C9100C35F76 /* DataUpdatesPlainObserver.m */,
+				C93CBFCC22246C9000C35F76 /* DummyDataUpdatesObserver.h */,
+				C93CBFCF22246C9100C35F76 /* DummyDataUpdatesObserver.m */,
+			);
+			path = UpdateHandler;
+			sourceTree = "<group>";
+		};
+		C93D44BF221F2234004CBDC4 /* UserSearch */ = {
+			isa = PBXGroup;
+			children = (
+				C93D44C0221F225C004CBDC4 /* UserSearchServiceLocator.h */,
+				C93D44C1221F225C004CBDC4 /* UserSearchServiceLocator.m */,
+				C93D44C3221F228C004CBDC4 /* UserSearchServiceLocatorProtocol.h */,
+			);
+			path = UserSearch;
+			sourceTree = "<group>";
+		};
+		C93D44C4221F6D23004CBDC4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C93D44C5221F6D3F004CBDC4 /* SearchTableViewController.h */,
+				C93D44C6221F6D3F004CBDC4 /* SearchTableViewController.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C93D44C8221F6D93004CBDC4 /* Filtering */ = {
+			isa = PBXGroup;
+			children = (
+				C93D44C9221F6DB1004CBDC4 /* FilteringViewModelProtocol.h */,
+			);
+			path = Filtering;
+			sourceTree = "<group>";
+		};
+		C93D44CB221F6E50004CBDC4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C93D44CA221F6E4C004CBDC4 /* SearchViewModelProtocol.h */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		C9B52C75221B09B9006C7423 = {
@@ -256,6 +423,7 @@
 		C9B52CAF221C0B71006C7423 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C9180DA1221EE6F600F8ECA8 /* ObjectConstructor */,
 				C9B52CB2221C0B9E006C7423 /* ResponseSerializer */,
 				C9B52CB1221C0B92006C7423 /* RequestSerailizer */,
 				C9B52CB0221C0B81006C7423 /* UsersService */,
@@ -348,6 +516,8 @@
 				C9B52D43221DFBD4006C7423 /* Categories */,
 				C9B52CC8221C2E3E006C7423 /* Common */,
 				C9B52CC7221C2E38006C7423 /* Profile */,
+				C93D44C4221F6D23004CBDC4 /* Search */,
+				C9BF9E80221EC1F100BD1B28 /* UserSearch */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -398,6 +568,9 @@
 		C9B52CCC221C2FC3006C7423 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C93D44CB221F6E50004CBDC4 /* Search */,
+				C93D44C8221F6D93004CBDC4 /* Filtering */,
+				C9BF9E84221EC2F500BD1B28 /* UserSearch */,
 				C9B52CCD221C2FCF006C7423 /* Common */,
 				C9B52CCE221C2FD5006C7423 /* UserProfile */,
 			);
@@ -430,6 +603,9 @@
 		C9B52CCF221C2FE1006C7423 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C93CBFD422246C9500C35F76 /* UpdateHandler */,
+				C93CBFAF222467A000C35F76 /* FetchedResultController */,
+				C9BF9E89221EC51600BD1B28 /* UserSearchViewModel */,
 				C9B52CF0221CAD03006C7423 /* DataSource */,
 				C9B52CD0221C2FE5006C7423 /* UserProfileModel */,
 			);
@@ -449,6 +625,9 @@
 		C9B52CD4221C343A006C7423 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C93CBFD822246F0A00C35F76 /* metamacros.h */,
+				C93CBFD522246EE000C35F76 /* Scope.h */,
+				C93CBFD622246EE000C35F76 /* Scope.m */,
 				C9B52CD5221C3451006C7423 /* SafeBlock.h */,
 				C9B52D0F221CAFA7006C7423 /* Defines.h */,
 			);
@@ -458,6 +637,7 @@
 		C9B52CD6221C3B2A006C7423 /* ServiceLocators */ = {
 			isa = PBXGroup;
 			children = (
+				C93D44BF221F2234004CBDC4 /* UserSearch */,
 				C9B52D38221D9EA2006C7423 /* UserProfile */,
 				C9B52D37221D9E98006C7423 /* UserService */,
 			);
@@ -568,6 +748,35 @@
 			path = SupplementaryViews;
 			sourceTree = "<group>";
 		};
+		C9BF9E80221EC1F100BD1B28 /* UserSearch */ = {
+			isa = PBXGroup;
+			children = (
+				C9BF9E81221EC21100BD1B28 /* UserSearchViewController.h */,
+				C9BF9E82221EC21100BD1B28 /* UserSearchViewController.m */,
+			);
+			path = UserSearch;
+			sourceTree = "<group>";
+		};
+		C9BF9E84221EC2F500BD1B28 /* UserSearch */ = {
+			isa = PBXGroup;
+			children = (
+				C9BF9E86221EC33200BD1B28 /* UserSearchViewModel.h */,
+				C9BF9E87221EC33200BD1B28 /* UserSearchViewModel.m */,
+				C9BF9E85221EC31500BD1B28 /* UserSearchViewModelProtocol.h */,
+			);
+			path = UserSearch;
+			sourceTree = "<group>";
+		};
+		C9BF9E89221EC51600BD1B28 /* UserSearchViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9BF9E8B221EC59300BD1B28 /* UserSearchModel.h */,
+				C9BF9E8C221EC59300BD1B28 /* UserSearchModel.m */,
+				C9BF9E8A221EC57A00BD1B28 /* UserSearchModelProtocol.h */,
+			);
+			path = UserSearchViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -613,6 +822,7 @@
 		C9B52C76221B09B9006C7423 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = persTim;
 				TargetAttributes = {
@@ -696,34 +906,51 @@
 				C9B52D0B221CAD33006C7423 /* DataSource.m in Sources */,
 				C9B52CE8221C4E05006C7423 /* TrackListDTO.m in Sources */,
 				C9B52CE4221C4DEC006C7423 /* TrackObject.m in Sources */,
+				C9180DA9221EE8CA00F8ECA8 /* TrackPonsomizer.m in Sources */,
 				C9B52D18221D5CE6006C7423 /* CommonTableViewController.m in Sources */,
 				C9B52D4A221E04F7006C7423 /* TextLabelReusableView.m in Sources */,
+				C93CBFD722246EE000C35F76 /* Scope.m in Sources */,
 				C9B52CEF221CAC46006C7423 /* UserProfileModel.m in Sources */,
 				C9B52D24221D69FA006C7423 /* UserProfileViewModel.m in Sources */,
 				C9B52D05221CAD33006C7423 /* ComposedDataSource.mm in Sources */,
 				C9B52D07221CAD33006C7423 /* ComposedDataSource+Private.m in Sources */,
+				C9BF9E83221EC21100BD1B28 /* UserSearchViewController.m in Sources */,
+				C93D44C7221F6D3F004CBDC4 /* SearchTableViewController.m in Sources */,
 				C9B52D2C221D6B37006C7423 /* TrackCellViewModel.m in Sources */,
 				C9B52D14221CB33D006C7423 /* CollectionViewModel.m in Sources */,
+				C93CBFC5222467A000C35F76 /* FetchedResultsSectionInfo.m in Sources */,
 				C9B52C86221B09B9006C7423 /* ProfileViewController.m in Sources */,
+				C93CBFD322246C9100C35F76 /* DataUpdatesPlainObserver.m in Sources */,
 				C9B52C91221B09BB006C7423 /* main.m in Sources */,
 				C9B52CBC221C1FCD006C7423 /* UserInfoDTO.m in Sources */,
 				C9B52D29221D6B25006C7423 /* UserInfoCellViewModel.m in Sources */,
 				C9B52CB6221C1F82006C7423 /* UsersService.m in Sources */,
 				C9B52D09221CAD33006C7423 /* BasicDataSource.m in Sources */,
+				C93CBFC8222467A000C35F76 /* FetchedResultsControllerModel+ModelState.m in Sources */,
+				C9180DA6221EE74000F8ECA8 /* UserPonsomizer.m in Sources */,
+				C9BF9E8D221EC59300BD1B28 /* UserSearchModel.m in Sources */,
 				C9B52CC4221C2DB7006C7423 /* UserObject.m in Sources */,
 				C9B52D42221DEB90006C7423 /* UIViewController+ErrorHandling.m in Sources */,
+				C93D44C2221F225C004CBDC4 /* UserSearchServiceLocator.m in Sources */,
+				C93CBFC7222467A000C35F76 /* FetchedResultsControllerDelegateEvent.m in Sources */,
+				C93CBFC4222467A000C35F76 /* FetchedResultsController.m in Sources */,
+				C93CBFD222246C9100C35F76 /* DummyDataUpdatesObserver.m in Sources */,
 				C9B52CEB221C4E1D006C7423 /* TrackDTO.m in Sources */,
 				C9B52C83221B09B9006C7423 /* AppDelegate.m in Sources */,
+				C9BF9E88221EC33200BD1B28 /* UserSearchViewModel.m in Sources */,
 				C9B52CDB221C3B75006C7423 /* UserServiceServiceLocator.m in Sources */,
 				C9B52CE1221C48D1006C7423 /* UserRequestSerializer.m in Sources */,
 				C9B52CA8221B0A61006C7423 /* NetworkClient.m in Sources */,
 				C9B52D46221DFBF6006C7423 /* UIView+GentleShowAndDismiss.m in Sources */,
+				C93CBFC6222467A000C35F76 /* FetchedResultsControllerModelChange.m in Sources */,
 				C9B52CDE221C48BB006C7423 /* UserResponseSerializer.m in Sources */,
+				C93CBFC9222467A000C35F76 /* FetchedResultsControllerModel.m in Sources */,
 				C9B52D3C221D9EDC006C7423 /* UserProfileServiceLocator.m in Sources */,
 				C9B52D31221D859E006C7423 /* UITableView+Util.m in Sources */,
 				C9B52D1E221D69B2006C7423 /* UserInfoTableViewCell.m in Sources */,
 				C9B52D21221D69CD006C7423 /* TrackTableViewCell.m in Sources */,
 				C9B52D0E221CAEA0006C7423 /* NSIndexPath+DataSource.m in Sources */,
+				C93CBFCA222467A000C35F76 /* FetchedResultsControllerModel+ModelChange.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

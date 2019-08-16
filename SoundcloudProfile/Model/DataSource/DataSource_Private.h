@@ -4,6 +4,8 @@
 
 #import "DataSource.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface DataSource ()
 
 - (NSIndexPath *)localIndexPathForGlobalIndexPath:(NSIndexPath *)globalIndexPath;
@@ -12,8 +14,11 @@
 @property (nonatomic, readonly, getter = isRootDataSource) BOOL rootDataSource;
 
 - (void)notifySectionsInserted:(NSIndexSet *)sections;
+
 - (void)notifySectionsRemoved:(NSIndexSet *)sections;
 
 - (DataSource *)dataSourceForSectionAtIndex:(NSInteger)sectionIndex;
 
 @end
+
+NS_ASSUME_NONNULL_END

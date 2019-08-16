@@ -37,8 +37,8 @@ NS_ASSUME_NONNULL_BEGIN
     return ((UserObject *)self.model).username;
 }
 
-- (NSString *_Nullable)location {
-    return self.user.location;
+- (NSString *_Nullable)city {
+    return self.user.city ;
 }
 
 - (NSString *_Nullable)fullName {

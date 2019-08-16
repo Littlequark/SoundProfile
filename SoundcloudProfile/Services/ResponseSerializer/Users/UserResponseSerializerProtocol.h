@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UserInfoDTO *_Nullable)serializeUserInfoFromResponse:(id)response;
 
+- (NSArray<UserInfoDTO *> *)serializeUserDTOsFromResponse:(id)response;
+
 - (TrackListDTO *_Nullable)serializeUserTrackListFromResponse:(id)response;
 
 @end

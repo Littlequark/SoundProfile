@@ -10,22 +10,28 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
 @class TrackListDTO;
 @class UserInfoDTO;
 
-typedef void (^UserServiceUserInfoCompletionBlock)(UserInfoDTO *_Nullable userinfoDTO, NSError *_Nullable error);
+typedef void (^UserServiceUserInfoCompletionBlock)(UserInfoDTO *_Nullable userInfoDTO, NSError *_Nullable error);
+typedef void (^UserServiceUsersCompletionBlock)(NSArray<UserInfoDTO *> *_Nullable userInfoDTOs, NSError *_Nullable error);
 typedef void (^UserServiceTrackListCompletionBlock)(id _Nullable trackList, NSError *_Nullable error);
+
 
 @protocol UsersServiceProtocol <NSObject>
 
-- (void)loadInfoForUserWithId:(NSString *)userId
+- (void)loadInfoForUserWithId:(NSNumber *)userId
                    completion:(UserServiceUserInfoCompletionBlock)completion;
 
-- (void)loadTracksForUserWithId:(NSString *)userId
+- (void)loadTracksForUserWithId:(NSNumber *)userId
                          offset:(NSUInteger)offset
                          length:(NSUInteger)length
                       competion:(UserServiceTrackListCompletionBlock)completion;
+
+- (void)searchUsersWithText:(NSString *_Nullable)searchText
+                     offset:(NSUInteger)offset
+                     length:(NSUInteger)length
+                  competion:(UserServiceUsersCompletionBlock)completion;
 
 @end
 

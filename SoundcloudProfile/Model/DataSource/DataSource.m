@@ -7,8 +7,11 @@
 #import "DataSourceDelegate.h"
 #import "Defines.h"
 #import "NSIndexPath+DataSource.h"
+#import "SafeBlock.h"
 
 @implementation DataSource
+
+NS_ASSUME_NONNULL_BEGIN
 
 - (NSUInteger)numberOfSections {
     return 1;
@@ -30,7 +33,7 @@
     OBJECT_ABSTRACT_METHOD;
 }
 
-- (id)itemAtIndexPath:(NSIndexPath *)indexPath {
+- (id _Nullable)itemAtIndexPath:(NSIndexPath *)indexPath {
     OBJECT_ABSTRACT_METHOD;
 }
 
@@ -38,11 +41,11 @@
     OBJECT_ABSTRACT_METHOD;
 }
 
-- (NSString *)titleForSection:(NSUInteger)section {
+- (NSString *_Nullable)titleForSection:(NSUInteger)section {
     return nil;
 }
 
-- (NSArray<NSString *> *)sectionIndexTitles {
+- (NSArray<NSString *> *_Nullable)sectionIndexTitles {
     return nil;
 }
 
@@ -50,7 +53,7 @@
     return NSNotFound;
 }
 
-- (id)lastObject {
+- (id _Nullable)lastObject {
     id item = nil;
     NSUInteger numberOfSections = self.numberOfSections;
     for (NSUInteger i = numberOfSections - 1; i < numberOfSections; i++) {
@@ -146,11 +149,12 @@
     }
 }
 
-- (void)notifyBatchUpdate:(dispatch_block_t)update {
+- (void)notifyBatchUpdate:(dispatch_block_t _Nullable)update {
     [self notifyBatchUpdate:update complete:nil];
 }
 
-- (void)notifyBatchUpdate:(dispatch_block_t)update complete:(dispatch_block_t)complete {
+- (void)notifyBatchUpdate:(dispatch_block_t _Nullable)update
+                 complete:(dispatch_block_t _Nullable)complete {
     ////AssertMainThread();
     
     id<DataSourceDelegate> delegate = self.delegate;
@@ -169,3 +173,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

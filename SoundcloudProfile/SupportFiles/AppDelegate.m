@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ProfileViewController.h"
-#import "UserProfileServiceLocator.h"
+#import "UserSearchViewController.h"
+#import "UserSearchServiceLocator.h"
 
 @interface AppDelegate ()
 
@@ -17,11 +17,12 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UserProfileServiceLocator *userProfileLocator = [[UserProfileServiceLocator alloc] init];
-    ProfileViewController *profileViewController = [[ProfileViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    profileViewController.viewModel = userProfileLocator.userProfileViewModel;
+    UserSearchServiceLocator *userSearchLocator = [[UserSearchServiceLocator alloc] init];
+    UserSearchViewController *userSearchViewController = [[UserSearchViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    userSearchViewController.viewModel = userSearchLocator.userSearchViewModel;
     UINavigationController *navigationController = [[UINavigationController alloc] init];
-    navigationController.viewControllers = @[profileViewController];
+    navigationController.viewControllers = @[userSearchViewController];
+    navigationController.navigationBar.prefersLargeTitles = YES;
     self.window.rootViewController = navigationController;
     return YES;
 }

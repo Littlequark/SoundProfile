@@ -1,12 +1,15 @@
 //
-// Created by Anton Serov on 24/10/2016.
-// Copyright (c) 2016 Brief Communications Inc. All rights reserved.
+// ConfigurableCellProtocol.h
 //
 
 #import <Foundation/Foundation.h>
 
-@protocol ConfigurableCellProtocol<NSObject>
+NS_ASSUME_NONNULL_BEGIN
+
+@protocol ConfigurableCellProtocol <NSObject>
 
 @property (nonatomic) id viewModel;
 
 @end
+
+NS_ASSUME_NONNULL_END

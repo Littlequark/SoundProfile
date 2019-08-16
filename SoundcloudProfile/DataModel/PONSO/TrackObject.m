@@ -8,6 +8,8 @@
 
 #import "TrackObject.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation TrackObject
 
 - (id)copyWithZone:(NSZone *)zone {
@@ -46,3 +48,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

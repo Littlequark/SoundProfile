@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setViewModel:(id<UserInfoCellViewModelProtocol>)viewModel {
     _viewModel = viewModel;
     self.primaryLabel.text = _viewModel.username;
-    self.secondaryLabel.text = _viewModel.location;
+    self.secondaryLabel.text = _viewModel.city;
     [self.avatarImageView sd_setImageWithURL:_viewModel.avatarURL];
 }
 

@@ -8,6 +8,10 @@
 
 #import "TrackListDTO.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation TrackListDTO
 
 @end
+
+NS_ASSUME_NONNULL_END

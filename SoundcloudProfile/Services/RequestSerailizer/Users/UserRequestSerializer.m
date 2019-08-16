@@ -8,9 +8,11 @@
 
 #import "UserRequestSerializer.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation UserRequestSerializer
 
-- (NSDictionary *)serializeUserInfoForUserId:(NSString *)userId {
+- (NSDictionary *_Nullable)serializeUserInfoForUserId:(NSString *)userId {
     // no arguments required
     return nil;
 }
@@ -19,4 +21,16 @@
     return @{@"offset":@(offset), @"length":@(length)};
 }
 
+- (NSDictionary *)serializeSearchUsersWithText:(NSString *_Nullable)searchText offset:(NSUInteger)offset length:(NSUInteger)length {
+    NSMutableDictionary *parameters = NSMutableDictionary.dictionary;
+    parameters[@"offset"] = @(offset);
+    parameters[@"length"] = @(length);
+    if (searchText != nil) {
+        parameters[@"q"] = searchText;
+    }
+    return parameters;
+}
+
 @end
+
+NS_ASSUME_NONNULL_END

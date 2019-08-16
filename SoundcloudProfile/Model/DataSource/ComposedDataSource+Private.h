@@ -4,10 +4,12 @@
 
 #import "ComposedDataSource.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /// Maps global sections to local sections for a given data source
 @interface ComposedMapping : NSObject <NSCopying>
 
-- (instancetype)initWithDataSource:(DataSource *)dataSource;
+- (instancetype)initWithDataSource:(DataSource *_Nullable)dataSource;
 
 /// The data source associated with this mapping
 @property (nonatomic, strong) DataSource * dataSource;
@@ -43,3 +45,5 @@
 - (ComposedMapping *)mappingForGlobalSection:(NSInteger)section;
 
 @end
+
+NS_ASSUME_NONNULL_END

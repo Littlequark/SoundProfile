@@ -58,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Public methods
 
 - (void)registerViewModelClass:(Class<ViewModelFactoryProtocol>)viewModelClass forModelClass:(Class)modelClass {
-//    Assert([(id)viewModelClass respondsToSelector:@selector(viewModelWithModel:)],
+//    Assert[(id)viewModelClass respondsToSelector:@selector(viewModelWithModel:)],
 //              @"Error! You are trying to register a viewModel class, which doesn't conform to ViewModelFactoryProtocol");
     [self.modelToViewModel setObject:NSStringFromClass(viewModelClass) forKey:NSStringFromClass(modelClass)];
 }

@@ -8,6 +8,8 @@
 
 #import "UserObject.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation UserObject
 
 - (id)copyWithZone:(NSZone *)zone {
@@ -20,6 +22,7 @@
     newInstance->_lastName = _lastName.copy;
     newInstance->_avatarURLString = _avatarURLString.copy;
     newInstance->_username = _username.copy;
+    newInstance->_city = _city.copy;
     return newInstance;
 }
 
@@ -46,3 +49,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

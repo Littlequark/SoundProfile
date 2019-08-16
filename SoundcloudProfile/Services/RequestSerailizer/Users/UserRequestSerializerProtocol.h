@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSDictionary *)serializeTracksWithOffset:(NSUInteger)offset length:(NSUInteger)length;
 
+- (NSDictionary *)serializeSearchUsersWithText:(NSString *_Nullable)searchText
+                                        offset:(NSUInteger)offset
+                                        length:(NSUInteger)length;
+
 @end
 
 NS_ASSUME_NONNULL_END

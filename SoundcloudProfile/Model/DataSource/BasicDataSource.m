@@ -7,6 +7,8 @@
 #import "Defines.h"
 #import "NSIndexPath+DataSource.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation BasicDataSource
 
 - (NSUInteger)numberOfItemsInSection:(NSUInteger)section {
@@ -14,7 +16,7 @@
     return _items.count;
 }
 
-- (id)itemAtIndexPath:(NSIndexPath *)indexPath {
+- (id _Nullable)itemAtIndexPath:(NSIndexPath *)indexPath {
     ////AssertMainThread();
     
     NSUInteger itemIndex = indexPath.sp_item;
@@ -48,7 +50,7 @@
     [self removeItemsAtIndexes:removedIndexes];
 }
 
-- (NSString *)titleForSection:(NSUInteger)section {
+- (NSString *_Nullable)titleForSection:(NSUInteger)section {
     return _items.count ? self.title : nil;
 }
 
@@ -149,3 +151,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

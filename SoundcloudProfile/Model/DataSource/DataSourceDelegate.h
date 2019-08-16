@@ -4,6 +4,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class DataSource;
 
 @protocol DataSourceDelegate <NSObject>
@@ -29,3 +31,5 @@
 - (void)dataSourceWillLoadContent:(DataSource *)dataSource;
 
 @end
+
+NS_ASSUME_NONNULL_END
